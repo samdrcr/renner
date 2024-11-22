@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Blog</title>
+  <link rel="stylesheet" href="edit.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Posts Section -->
+    <div id="posts-section" class="section active">
+      <h1>My Blog</h1>
+      <button id="create-post-button">Create New Post</button>
+      <div id="posts"></div>
+    </div>
+
+    <!-- Create Post Section -->
+    <div id="create-section" class="section">
+      <h1>Create a Post</h1>
+      <form id="post-form">
+        <input type="text" id="title" placeholder="Title" required />
+        <textarea id="content" placeholder="Content" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      <button id="back-to-posts">Back to Posts</button>
+    </div>
+
+    <!-- Post Details Section -->
+    <div id="post-details-section" class="section">
+      <div id="post-details"></div>
+      <button id="back-to-posts-from-details">Back to Posts</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  <script src="display.js"></script>
+</body>
+</html>
