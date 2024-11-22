@@ -1,0 +1,136 @@
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+  }
+  
+  .container {
+    max-width: 800px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  h1, h2 {
+    margin-top: 0;
+    color: #0056b3;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+  
+  #user-select {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    font-size: 1rem;
+    margin: 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    outline: none;
+    transition: border-color 0.2s ease-in-out;
+  }
+  
+  #user-select:focus {
+    border-color: #0056b3;
+  }
+  
+  #post-list {
+    margin-top: 20px;
+  }
+  
+  .post {
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post h3 {
+    font-size: 1.2rem;
+    margin: 0 0 10px;
+    color: #0056b3;
+  }
+  
+  .post p {
+    margin: 0;
+    color: #555;
+  }
+  
+  #create-post-form {
+    margin-top: 30px;
+  }
+  
+  #create-post-form input,
+  #create-post-form textarea,
+  button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  #create-post-form textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #003f8c;
+  }
+  
+  button:active {
+    background-color: #002f6d;
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      padding: 15px;
+    }
+  
+    h1, h2 {
+      font-size: 1.4rem;
+    }
+  
+    #user-select,
+    #create-post-form input,
+    #create-post-form textarea,
+    button {
+      max-width: 100%;
+    }
+  }
+  

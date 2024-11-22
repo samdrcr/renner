@@ -1,0 +1,27 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "name": "marc",
+        "posts": [
+            { "id": 1, "title": "Hello!", "content": "Hello world!" }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "alex",
+        "posts": [
+          { "id": 1, "title": "My First Post", "content": "Hello world!" }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "jordan",
+        "posts": [
+          { "id": 1, "title": "Travel Plans", "content": "Heading to Japan next month!" },
+          { "id": 2, "title": "Photography Tips", "content": "Always shoot during golden hour." }
+        ]
+      }
+    ]
+  }
+  

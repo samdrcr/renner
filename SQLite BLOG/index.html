@@ -1,0 +1,30 @@
+<!--Run the backend db.json with node app.js
+111210557 范權榮
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Posts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="user-heading">Posts for...</h1>
+    <select id="user-select">
+      <option value="">Select a user</option>
+    </select>
+
+    <div id="post-list"></div>
+
+    <form id="create-post-form">
+      <h2>Create a Post</h2>
+      <input type="text" id="title" placeholder="Post title" required />
+      <textarea id="content" placeholder="Post content" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <script src="render.js"></script>
+</body>
+</html>
