@@ -1,0 +1,91 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .post-card {
+    border: 1px solid black;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  button:hover {
+    background-color: gray;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  /* Prevent textarea resizing */
+  form textarea {
+    resize: none;
+  }
+  
+  form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px; /* Adds more space below Submit button */
+  }
+  
+  #back-to-posts {
+    margin-top: 20px; /* Ensures a gap between Submit and Back to Posts buttons */
+  }
+  
+  #posts-section {
+    margin-top: 30px; /* Add space between Create Post button and the post list */
+  }
+  
+  #posts {
+    margin-top: 20px; /* Extra gap specifically for the posts list */
+  }
+  
+  .section {
+    display: none;
+  }
+  
+  .section.active {
+    display: block;
+  }
+  
+  #post-details {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+  }
+  
+  h1, h2, h3 {
+    color: black;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
