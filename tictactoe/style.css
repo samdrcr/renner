@@ -1,0 +1,157 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7ebe8;
+    color: #5d4037;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+#landing-page {
+    text-align: center;
+    width: 100%;
+}
+
+#landing-page input {
+    display: block;
+    width: 21%;
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid #d7ccc8;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #efebe9;
+    color: #5d4037;
+}
+
+#landing-page button {
+    background-color: #8d6e63;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #f7ebe8;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#landing-page button:hover {
+    background-color: #6d4c41;
+}
+
+#game-container {
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+#game-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px 0;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #efebe9;
+    border: 2px solid #d7ccc8;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #5d4037;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+    background-color: #d7ccc8;
+}
+
+.cell.taken {
+    pointer-events: none;
+    color: #8d6e63;
+}
+
+#status {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #5d4037;
+}
+
+#reset {
+    background-color: #8d6e63;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #f7ebe8;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#reset:hover {
+    background-color: #6d4c41;
+}
+
+#winner-announcement {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(245, 222, 215, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(93, 64, 55, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    z-index: 100;
+}
+
+#winner-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #6d4c41;
+    margin-bottom: 20px;
+}
+
+#back-to-home {
+    background: linear-gradient(45deg, #8d6e63, #6d4c41);
+    color: #f7ebe8;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#back-to-home:hover {
+    background: linear-gradient(45deg, #5d4037, #8d6e63);
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hidden ~ #game-container {
+    filter: none;
+    pointer-events: auto;
+}

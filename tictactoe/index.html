@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="landing-page">
+        <h1>Welcome to Tic-Tac-Toe</h1>
+        <div id="player-setup">
+            <input type="text" id="playerX" placeholder="Enter Player X's name" required>
+            <input type="text" id="playerO" placeholder="Enter Player O's name" required>
+            <button id="start-game">Start Game</button>
+        </div>
+    </div>
+
+    <script>
+        const startGameButton = document.getElementById('start-game');
+        startGameButton.addEventListener('click', () => {
+            const playerXName = document.getElementById('playerX').value.trim();
+            const playerOName = document.getElementById('playerO').value.trim();
+
+            if (!playerXName || !playerOName) {
+                alert('Both Player X and Player O names must be entered!');
+                return;
+            }
+
+            localStorage.setItem('playerX', playerXName);
+            localStorage.setItem('playerO', playerOName);
+            window.location.href = 'game.html';
+        });
+    </script>
+</body>
+</html>
